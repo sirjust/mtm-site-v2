@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Agency - Start Bootstrap Theme
+        title MooreThanMusic
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -22,6 +22,7 @@ html(lang='en')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
+        link(href="assets/img/logos/Logo.jpg", rel="icon")
 
     body#page-top
 
@@ -29,7 +30,7 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 a.navbar-brand(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='...')
+                    img(src='assets/img/logos/LogoTransparent.png', alt='...')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ms-1
@@ -369,12 +370,8 @@ html(lang='en')
                     .col-lg-4.text-lg-start
                         | Copyright &copy; Justin Moore 2025
                     .col-lg-4.my-3.my-lg-0
-                        a.btn.btn-dark.btn-social.mx-2(href='https://www.instagram.com/moorethanmusic', aria-label='Instagram')
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.instagram.com/moorethanmusic', aria-label='Instagram', target="_blank")
                             i.fab.fa-instagram
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
-                            i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
-                            i.fab.fa-linkedin-in
                     .col-lg-4.text-lg-end
                         a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
                         a.link-dark.text-decoration-none(href='#!') Terms of Use
