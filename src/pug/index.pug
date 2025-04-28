@@ -37,13 +37,13 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
-                            a.nav-link(href='#services') Services
-                        li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
-                        li.nav-item
-                            a.nav-link(href='#about') About
-                        li.nav-item
                             a.nav-link(href='#team') Team
+                        li.nav-item
+                            a.nav-link(href='#philosophy') Philosophy
+                        li.nav-item
+                            a.nav-link(href='#testimonials') Testimonials
+                        li.nav-item
+                            a.nav-link(href='#history') History
                         li.nav-item
                             a.nav-link(href='#contact') Contact
         // Masthead
@@ -51,13 +51,10 @@ html(lang='en')
             .container
                 .masthead-subheading Welcome To Our Studio!
                 .masthead-heading.text-uppercase It's Nice To Meet You
-                a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
-
-        // Services
-        section#services.page-section
+                a.btn.btn-primary.btn-xl.text-uppercase(href='#contact') Tell Me More
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Services
+                    h2.section-heading.text-uppercase Contact
                     h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 .row.text-center
                     .col-md-4
@@ -82,8 +79,42 @@ html(lang='en')
                         p.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
-        // Portfolio Grid
-        section#portfolio.page-section.bg-light
+        // Team
+        section#team.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase The Studio
+                    h3.section-subheading.text-muted Our blend of classical and modern styles will help you reach your full potential
+                .row
+                    .col-lg-6
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/rachel-small.jpg', alt='...')
+                            h4 Rachel Moore
+                            p.text-muted Lead Instructor
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.instagram.com/rachelannemooreofficial', aria-label='Rachel Anne Moore Instagram')
+                                i.fab.fa-twitter
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.facebook.com/rachelannemooreofficial', aria-label='Rachel Anne Moore Facebook Profile')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/rachel-anne-moore-a4389035/', aria-label='Rachel Anne Moore LinkedIn Profile')
+                                i.fab.fa-linkedin-in
+                    // need youtube link
+                    .col-lg-6
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/justin-small.jpg', alt='...')
+                            h4 Justin Moore
+                            p.text-muted Associate Instructor
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.facebook.com/justin.moore.94009/', aria-label='Justin Moore Facebook Profile')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/justinleonardmoore/', aria-label='Justin Moore LinkedIn Profile')
+                                i.fab.fa-linkedin-in
+                    // need youtube link
+                .row
+                    .col-lg-8.mx-auto.text-center
+                        p.large.text-muted
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+
+        // Philosophy
+        section#philosophy.page-section.bg-light
             .container
                 .text-center
                     h2.section-heading.text-uppercase Portfolio
@@ -156,53 +187,68 @@ html(lang='en')
                                 .portfolio-caption-heading Window
                                 .portfolio-caption-subheading.text-muted Photography
 
-        // About
-        section#about.page-section
+        section#testimonials.page-section 
+            .container 
+                .text-center 
+                    h2.section-heading.text-uppercase This is the testimonials section
+
+        // History
+        section#history.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase About
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase Our History
+                    h3.section-subheading.text-muted Decades of Experience Performing and Teaching
                 ul.timeline
                     li
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
+                            img.rounded-circle.img-fluid(src='assets/img/logos/universities.png', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 2009-2011
-                                h4.subheading Our Humble Beginnings
+                                h4 2003-2012
+                                h4.subheading University and Beyond
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    | Rachel and Justin complete their bachelor's degrees at Indiana University. Justin and Rachel complete their Master's degrees at Indiana and Tennessee, respectively. Justin sings roles such as Marcello, Belcore, and Don Giovanni, and Rachel sings Mabel, Donna Anna, Abigail Williams, and Lauretta.
                     li.timeline-inverted
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
+                            img.rounded-circle.img-fluid(src='assets/img/history/Phantom1.png', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 March 2011
-                                h4.subheading An Agency is Born
+                                h4 2012-2015
+                                h4.subheading Debuts in Hamburg
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    | Rachel makes her professional musical theater debut in Hamburg, singing Carlotta in <i>The Phantom of the Opera</i>, and originates the role of Christine in the German production of <i>Love Never Dies</i>. Justin, having changed from baritone to tenor, sings Don Jose, Cavaradossi, and Alfredo.
                     li
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
+                            img.rounded-circle.img-fluid(src='assets/img/history/braunschweig.png', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 December 2015
-                                h4.subheading Transition to Full Service
+                                h4 2015-2017
+                                h4.subheading Braunschweig
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    | After a concert tour with the 12 Tenors, Justin joins the chorus of the Staatstheater Braunschweig. Rachel concludes her run as Christine and begins teaching voice lessons with OnStage: School for Musical Theatre in Braunschweig.
                     li.timeline-inverted
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
+                            img.rounded-circle.img-fluid(src='assets/img/history/LND.png', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 July 2020
-                                h4.subheading Phase Two Expansion
+                                h4 2017-2019
+                                h4.subheading Return to America
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    | Rachel joins the US Tour of <i>Love Never Dies</i> and then Broadway's <i>The Phantom of the Opera.</i> Justin performs the Beast in <i>Beauty and the Beast</i> and adds software development to his repertoire, designing Rachel's performing website.
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/history/LogoLarge.jpg', alt='...')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 2020-2021
+                                h4.subheading The Studio is Born
+                            .timeline-body
+                                p.text-muted
+                                    | After Covid shuts Broadway's doors, Rachel decides to follow her passion for teaching, creating Moore Than Music. Justin begins working for Microsoft, bringing the family and voice studio to the Pacific Northwest.
                     li.timeline-inverted
                         .timeline-image
                             h4
@@ -212,50 +258,7 @@ html(lang='en')
                                 br
                                 | Story!
 
-        // Team
-        section#team.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Our Amazing Team
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
-                            h4 Parveen Anand
-                            p.text-muted Lead Designer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand LinkedIn Profile')
-                                i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
-                            h4 Diana Petersen
-                            p.text-muted Lead Marketer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen LinkedIn Profile')
-                                i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
-                            h4 Larry Parker
-                            p.text-muted Lead Developer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker LinkedIn Profile')
-                                i.fab.fa-linkedin-in
-                .row
-                    .col-lg-8.mx-auto.text-center
-                        p.large.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+        
 
         // Clients
         div.py-5
