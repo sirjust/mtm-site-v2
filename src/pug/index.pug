@@ -96,46 +96,87 @@ html(lang='en')
                 .text-center
                     h2.section-heading.text-uppercase Our Philosophy
                     h3.section-subheading.text-muted The Moore Than Music Voice Studio is a safe place where teacher and student meet as equals, sharing the common goal of helping the student grow
-                .row
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 1
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 2
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 3
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Finish
-                                .portfolio-caption-subheading.text-muted Identity
+                .row.text-center
+                    .col-md-4 
+                        h4.service-heading Joy
+                    .col-md-4 
+                        h4.service-heading Freedom
+                    .col-md-4
+                        h4.service-heading Connection
 
-
+        // Testimonials
         section#testimonials.page-section 
             .container 
                 .text-center 
-                    h2.section-heading.text-uppercase This is the testimonials section
+                    h2.section-heading.text-uppercase Testimonials 
+                    h3.section-heading.text-uppercase See what Moore Than Music students are saying about their experiences
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        // testimonial item 1
+                        .testimonial-item
+                            a.testimonial-link(data-bs-toggle='modal', href='#testimonialModal1')
+                                .testimonial-hover
+                                    .testimonial-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/testimonials/Savanna.jpg', alt='...')
+                            .testimonial-caption
+                                .testimonial-caption-heading Savanna
+                                .testimonial-caption-subheading.text-muted I could not ask for a better teacher!
+                    .col-lg-4.col-sm-6.mb-4
+                        // testimonial item 2
+                        .testimonial-item
+                            a.testimonial-link(data-bs-toggle='modal', href='#testimonialModal2')
+                                .testimonial-hover
+                                    .testimonial-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/testimonials/Avery.jpg', alt='...')
+                            .testimonial-caption
+                                .testimonial-caption-heading Avery
+                                .testimonial-caption-subheading.text-muted My range and technique have never been better.
+                    .col-lg-4.col-sm-6.mb-4
+                        // testimonial item 3
+                        .testimonial-item
+                            a.testimonial-link(data-bs-toggle='modal', href='#testimonialModal3')
+                                .testimonial-hover
+                                    .testimonial-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/testimonials/Clara.jpg', alt='...')
+                            .testimonial-caption
+                                .testimonial-caption-heading Clara
+                                .testimonial-caption-subheading.text-muted I've noticed a boost in my confidence and self esteem.
+                    .col-lg-4.col-sm-6.mb-4
+                        // testimonial item 4
+                        .testimonial-item
+                            a.testimonial-link(data-bs-toggle='modal', href='#testimonialModal4')
+                                .testimonial-hover
+                                    .testimonial-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/testimonials/Mike.jpg', alt='...')
+                            .testimonial-caption
+                                .testimonial-caption-heading Mike
+                                .testimonial-caption-subheading.text-muted Rachel has helped me rediscover my love for performing.
+                    .col-lg-4.col-sm-6.mb-4
+                        // testimonial item 5
+                        .testimonial-item
+                            a.testimonial-link(data-bs-toggle='modal', href='#testimonialModal5')
+                                .testimonial-hover
+                                    .testimonial-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/testimonials/Astin.jpg', alt='...')
+                            .testimonial-caption
+                                .testimonial-caption-heading Astin
+                                .testimonial-caption-subheading.text-muted No matter my mood, after our lesson, I always leave feeling at peace and filled with joy.
+                    .col-lg-4.col-sm-6.mb-4
+                        // testimonial item 6
+                        .testimonial-item
+                            a.testimonial-link(data-bs-toggle='modal', href='#testimonialModal6')
+                                .testimonial-hover
+                                    .testimonial-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/testimonials/Maria.jpg', alt='...')
+                            .testimonial-caption
+                                .testimonial-caption-heading Maria
+                                .testimonial-caption-subheading.text-muted I've finally reached a high level of happiness in music.
 
         // History
         section#history.page-section
@@ -348,13 +389,13 @@ html(lang='en')
                         a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
                         a.link-dark.text-decoration-none(href='#!') Terms of Use
 
-        // Portfolio Modals
-        include includes/portfolio-modal-1
-        include includes/portfolio-modal-2
-        include includes/portfolio-modal-3
-        include includes/portfolio-modal-4
-        include includes/portfolio-modal-5
-        include includes/portfolio-modal-6
+        // testimonial Modals
+        include includes/testimonial-modal-1
+        include includes/testimonial-modal-2
+        include includes/testimonial-modal-3
+        include includes/testimonial-modal-4
+        include includes/testimonial-modal-5
+        include includes/testimonial-modal-6
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
