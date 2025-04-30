@@ -62,9 +62,9 @@ html(lang='en')
                 .text-center
                     h2.section-heading.text-uppercase The Studio
                     h3.section-subheading.text-muted Our blend of classical and modern styles will help you reach your full potential
-                .row
+                .row.py-2
                     .col-lg-6
-                        .team-member
+                        .team-member.py-2
                             img.mx-auto.rounded-circle(src='assets/img/team/rachel-small.jpg', alt='...')
                             h4 Rachel Moore
                             p.text-muted Lead Instructor
@@ -74,9 +74,10 @@ html(lang='en')
                                 i.fab.fa-facebook-f
                             a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/rachel-anne-moore-a4389035/', aria-label='Rachel Anne Moore LinkedIn Profile')
                                 i.fab.fa-linkedin-in
-                    // need youtube link
+                        .iframe-container.mx-auto.text-center
+                            iframe(src="https://www.youtube.com/embed/jYYCNlXYjLQ", frameborder="", title="YouTube video player", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
                     .col-lg-6
-                        .team-member
+                        .team-member.py-2
                             img.mx-auto.rounded-circle(src='assets/img/team/justin-small.jpg', alt='...')
                             h4 Justin Moore
                             p.text-muted Associate Instructor
@@ -84,11 +85,13 @@ html(lang='en')
                                 i.fab.fa-facebook-f
                             a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/justinleonardmoore/', aria-label='Justin Moore LinkedIn Profile')
                                 i.fab.fa-linkedin-in
-                    // need youtube link
+                        .iframe-container.mx-auto.text-center
+                            iframe(src="https://www.youtube.com/embed/TRZ0u9sqJkM", frameborder="", title="YouTube video player", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
                 .row
                     .col-lg-8.mx-auto.text-center
                         p.large.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+                            | “For me, music is more than the tunes you hear or the notes you reach. It’s a universal instrument for carrying stories and emotions across time and space. Music is communication.” - Rachel Moore
+
 
         // Philosophy
         section#philosophy.page-section.bg-light
@@ -109,7 +112,7 @@ html(lang='en')
             .container 
                 .text-center 
                     h2.section-heading.text-uppercase Testimonials 
-                    h3.section-heading.text-uppercase See what Moore Than Music students are saying about their experiences
+                    h3.section-subheading.text-muted See what Moore Than Music students are saying about their experiences
                 .row
                     .col-lg-4.col-sm-6.mb-4
                         // testimonial item 1
@@ -119,7 +122,7 @@ html(lang='en')
                                     .testimonial-hover-content
                                         i.fas.fa-plus.fa-3x
                                 img.img-fluid(src='assets/img/testimonials/Savanna.jpg', alt='...')
-                            .testimonial-caption
+                            .testimonial-caption.text-center
                                 .testimonial-caption-heading Savanna
                                 .testimonial-caption-subheading.text-muted I could not ask for a better teacher!
                     .col-lg-4.col-sm-6.mb-4
@@ -130,7 +133,7 @@ html(lang='en')
                                     .testimonial-hover-content
                                         i.fas.fa-plus.fa-3x
                                 img.img-fluid(src='assets/img/testimonials/Avery.jpg', alt='...')
-                            .testimonial-caption
+                            .testimonial-caption.text-center
                                 .testimonial-caption-heading Avery
                                 .testimonial-caption-subheading.text-muted My range and technique have never been better.
                     .col-lg-4.col-sm-6.mb-4
@@ -141,7 +144,7 @@ html(lang='en')
                                     .testimonial-hover-content
                                         i.fas.fa-plus.fa-3x
                                 img.img-fluid(src='assets/img/testimonials/Clara.jpg', alt='...')
-                            .testimonial-caption
+                            .testimonial-caption.text-center
                                 .testimonial-caption-heading Clara
                                 .testimonial-caption-subheading.text-muted I've noticed a boost in my confidence and self esteem.
                     .col-lg-4.col-sm-6.mb-4
@@ -152,7 +155,7 @@ html(lang='en')
                                     .testimonial-hover-content
                                         i.fas.fa-plus.fa-3x
                                 img.img-fluid(src='assets/img/testimonials/Mike.jpg', alt='...')
-                            .testimonial-caption
+                            .testimonial-caption.text-center
                                 .testimonial-caption-heading Mike
                                 .testimonial-caption-subheading.text-muted Rachel has helped me rediscover my love for performing.
                     .col-lg-4.col-sm-6.mb-4
@@ -163,7 +166,7 @@ html(lang='en')
                                     .testimonial-hover-content
                                         i.fas.fa-plus.fa-3x
                                 img.img-fluid(src='assets/img/testimonials/Astin.jpg', alt='...')
-                            .testimonial-caption
+                            .testimonial-caption.text-center
                                 .testimonial-caption-heading Astin
                                 .testimonial-caption-subheading.text-muted No matter my mood, after our lesson, I always leave feeling at peace and filled with joy.
                     .col-lg-4.col-sm-6.mb-4
@@ -174,7 +177,7 @@ html(lang='en')
                                     .testimonial-hover-content
                                         i.fas.fa-plus.fa-3x
                                 img.img-fluid(src='assets/img/testimonials/Maria.jpg', alt='...')
-                            .testimonial-caption
+                            .testimonial-caption.text-center
                                 .testimonial-caption-heading Maria
                                 .testimonial-caption-subheading.text-muted I've finally reached a high level of happiness in music.
 
