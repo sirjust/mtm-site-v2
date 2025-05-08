@@ -10986,17 +10986,17 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-#testimonial .testimonial-item {
+#testimonials .testimonial-item {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
 }
-#testimonial .testimonial-item .testimonial-link {
+#testimonials .testimonial-item .testimonial-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
-#testimonial .testimonial-item .testimonial-link .testimonial-hover {
+#testimonials .testimonial-item .testimonial-link .testimonial-hover {
   display: flex;
   position: absolute;
   width: 100%;
@@ -11007,25 +11007,25 @@ header.masthead .masthead-heading {
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
-#testimonial .testimonial-item .testimonial-link .testimonial-hover .testimonial-hover-content {
+#testimonials .testimonial-item .testimonial-link .testimonial-hover .testimonial-hover-content {
   font-size: 1.25rem;
   color: white;
 }
-#testimonial .testimonial-item .testimonial-link:hover .testimonial-hover {
+#testimonials .testimonial-item .testimonial-link:hover .testimonial-hover {
   opacity: 1;
 }
-#testimonial .testimonial-item .testimonial-caption {
+#testimonials .testimonial-item .testimonial-caption {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
-#testimonial .testimonial-item .testimonial-caption .testimonial-caption-heading {
+#testimonials .testimonial-item .testimonial-caption .testimonial-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
 }
-#testimonial .testimonial-item .testimonial-caption .testimonial-caption-subheading {
+#testimonials .testimonial-item .testimonial-caption .testimonial-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
