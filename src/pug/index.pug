@@ -18,6 +18,8 @@ html(lang='en')
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
 
         // Core theme CSS (includes Bootstrap)
@@ -52,7 +54,17 @@ html(lang='en')
         header.masthead
             .container
                 .masthead-subheading Explore Your Potential With
-                .masthead-heading.text-uppercase MOORE THAN MUSIC
+                .masthead-heading.text-uppercase.text-center 
+                    .flex
+                        .one-word.flex
+                            span.first-letter M
+                            span.rest-of-letters oore
+                        .one-word.flex
+                            span.first-letter T
+                            span.rest-of-letters han
+                        .one-word.flex
+                            span.first-letter M 
+                            span.rest-of-letters usic
                 .masthead-subheading Offering In-Person and Virtual Voice Lessons
                 a.btn.btn-primary.btn-xl.text-uppercase(href='#contact') Tell Me More
 
