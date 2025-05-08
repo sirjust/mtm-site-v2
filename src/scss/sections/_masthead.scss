@@ -7,7 +7,7 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: $white;
-    background-image: url("../assets/img/header-bg.jpg");
+    background-image: url("../assets/img/piano.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -28,6 +28,31 @@ header.masthead {
         margin-bottom: 2rem;
         font-family: $headings-font-family;
     }
+
+    .intro-text {
+        background-color: rgba(64,48,70,.2);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 15px;
+    }
+
+    .first-letter {
+        color: $primary;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .one-word {
+        flex-wrap: nowrap;
+    }
+
+    .rest-of-letters {
+        margin-right:12px;
+    }
 }
 
 @include media-breakpoint-up(md) {
@@ -36,6 +61,7 @@ header.masthead {
         padding-bottom: 12.5rem;
 
         .masthead-subheading {
+            font-family: $serif-font-family;
             font-size: 2.25rem;
             font-style: italic;
             line-height: 2.25rem;
