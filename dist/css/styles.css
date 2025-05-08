@@ -11294,6 +11294,11 @@ header.masthead .rest-of-letters {
   border: none;
 }
 
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
