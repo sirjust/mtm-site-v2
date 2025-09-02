@@ -1,4 +1,4 @@
-const validateForm = formSelector => {
+const validateForm = (formSelector, callback) => {
     console.log('Validating form...')
 
     const formElement = document.querySelector(formSelector);
@@ -54,8 +54,11 @@ const validateForm = formSelector => {
     formElement.addEventListener('submit', event => {
         event.preventDefault();
         
-        if(validateAllFormGroups(formElement)){
-            console.log("Form is valid")
+    const formIsValid = validateAllFormGroups(formElement);
+
+        if(formIsValid){
+            console.log("Form is valid, sending")
+            callback(formElement);
         } else {
             console.log("Form is invalid")
         };
@@ -73,4 +76,33 @@ const validateForm = formSelector => {
     }
 };
 
-validateForm('#contactForm');
+const sendToApi = (formElement) => {
+    const data = Array.from(formElement.elements)
+        .filter(element => element.type !== 'submit')
+        .reduce((accumulator, element) => ({...accumulator, [element.id]: element.value}), {});
+
+        // data.desc = data.message
+
+        // Send it to an API endpoint
+        fetch("https://ibvpicae77.execute-api.us-east-1.amazonaws.com/contact-form", {
+        method: "POST", // or PUT/PATCH depending on your API
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data) // Convert JS object → JSON string
+        })
+        .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json(); // Parse JSON response
+        })
+        .then(result => {
+        console.log("API response:", result);
+        })
+        .catch(error => {
+        console.error("Error sending data:", error);
+        });
+}
+
+validateForm('#contactForm', sendToApi);
