@@ -93,16 +93,41 @@ const sendToApi = (formElement) => {
         })
         .then(response => {
         if (!response.ok) {
+            const errorElement = document.getElementById("submitErrorMessage");
+            errorElement.classList.remove('d-none');
+            errorElement.classList.add('d-inline');
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         return response.json(); // Parse JSON response
         })
         .then(result => {
-        console.log("API response:", result);
+            displayResult(true, result)
         })
         .catch(error => {
-        console.error("Error sending data:", error);
+            displayResult(false, error)
         });
+}
+
+const displayResult = (isSuccess, result) => {
+    if(isSuccess){
+        console.log("API response:", result);
+        const successElement = document.getElementById("submitSuccessMessage");
+        successElement.classList.remove('d-none');
+        successElement.classList.add('d-inline');
+
+        const errorElement = document.getElementById("submitErrorMessage");
+        errorElement.classList.remove('d-inline');
+        errorElement.classList.add('d-none');
+    } else {
+        console.error("Error sending data:", result);
+        const successElement = document.getElementById("submitSuccessMessage");
+        successElement.classList.remove('d-inline');
+        successElement.classList.add('d-none');
+
+        const errorElement = document.getElementById("submitErrorMessage");
+        errorElement.classList.remove('d-none');
+        errorElement.classList.add('d-inline');
+    }
 }
 
 validateForm('#contactForm', sendToApi);
