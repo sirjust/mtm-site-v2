@@ -7,14 +7,16 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
         meta(name='author', content='')
+        meta(name='og:image', content='assets/img/team/rachel-small.jpg')
 
         title MooreThanMusic
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/img/logos.Logo.jpg')
+        link(rel='icon', type='image/x-icon', href='assets/img/logos/Logo.jpg')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+        //- script(src="https://cdn.tailwindcss.com") this breaks the navbar
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
@@ -88,7 +90,7 @@ html(lang='en')
                             a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/rachel-anne-moore-a4389035/', aria-label='Rachel Anne Moore LinkedIn Profile')
                                 i.fab.fa-linkedin-in
                         .iframe-container.mx-auto.text-center
-                            iframe(src="https://www.youtube.com/embed/jYYCNlXYjLQ", frameborder="", title="YouTube video player", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+                            iframe(src="https://www.youtube.com/embed/Vf0UF4qAIyQ?si=Z42Ach-dnErPjcd0", frameborder="", title="YouTube video player", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
                     .col-lg-6
                         .team-member.py-2
                             img.mx-auto.rounded-circle(src='assets/img/team/justin-small.jpg', alt='...')
@@ -157,9 +159,9 @@ html(lang='en')
                                 .testimonial-hover
                                     .testimonial-hover-content
                                         i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/testimonials/Avery.jpg', alt='...')
+                                img.img-fluid(src='assets/img/testimonials/Varian.jpg', alt='...')
                             .testimonial-caption.text-center
-                                .testimonial-caption-heading Avery
+                                .testimonial-caption-heading Varian
                                 .testimonial-caption-subheading.text-muted My range and technique have never been better.
                     .col-lg-4.col-sm-6.mb-4
                         // testimonial item 3
@@ -258,12 +260,22 @@ html(lang='en')
                             img.rounded-circle.img-fluid(src='assets/img/history/LogoLarge.jpg', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 2020-2021
+                                h4 2020
                                 h4.subheading The Studio is Born
                             .timeline-body
                                 p.text-muted
-                                    | After Covid shuts Broadway's doors, Rachel decides to follow her passion for teaching, creating Moore Than Music. Justin begins working for Microsoft, bringing the family and voice studio to the Pacific Northwest.
+                                    | After Covid shuts Broadway's doors, Rachel decides to follow her passion for teaching, creating the Moore Than Music Voice Studio in New Jersey. 
                     li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/history/Rainier.jpg', alt='...')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 2021 - Present
+                                h4.subheading Homeward Bound
+                            .timeline-body
+                                p.text-muted
+                                    | Justin begins working for Microsoft, bringing the family and voice studio to the Pacific Northwest, where they both grew up.
+                    li
                         .timeline-image
                             h4
                                 | Be Part
@@ -299,7 +311,7 @@ html(lang='en')
                 .row
                     .col-lg-10.mx-auto.text-center
                         p.large.text-primary.fw-bolder.my-2
-                            | What equipment do I need for lessons?
+                            | What equipment do I need for virtual lessons?
                         p.text-muted.answer.py-2.mb-2 
                             | Lessons work best when the student has two devices, for instance, a smart phone and a computer, or a tablet and a smartphone. This makes it possible for the student to be connected to the lesson on one device and playing the backing track on another.
                 .row
@@ -322,63 +334,72 @@ html(lang='en')
                     h2.section-heading.text-uppercase Contact Us
                     h3.section-subheading.text-white We'd love to hear from you!
 
-                // * * * * * * * * * * * * * * *
-                // * * SB Forms Contact Form * *
-                // * * * * * * * * * * * * * * *
-
-                // This form is pre-integrated with SB Forms.
-                // To make this form functional, sign up at
-                // https://startbootstrap.com/solution/contact-forms
-                // to get an API token!
-
-                form#contactForm(data-sb-form-api-token='API_TOKEN')
+                form#contactForm()
                     .row.align-items-stretch.mb-5
                         .col-md-6
                             .form-group
 
                                 // Name input
+                                label(for='Name') Name
                                 input#name.form-control(
                                     type='text',
                                     placeholder='Your Name *',
-                                    data-sb-validations='required'
+                                    required
                                 )
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
+                                .error.text-white.fw-bold
+                                span.error-icon.hidden
+                                    i.fa-solid.fa-circle-exclamation
+                                span.success-icon.hidden
+                                    i.fa-solid.fa-circle-check
 
                             .form-group
 
                                 // Email address input
+                                label(for='Email') Email
                                 input#email.form-control(
                                     type='email',
+                                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
                                     placeholder='Your Email *',
-                                    data-sb-validations='required,email'
+                                    required,
+                                    email
                                 )
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
+                                .error.text-white.fw-bold
+                                span.error-icon.hidden
+                                    i.fa-solid.fa-circle-exclamation
+                                span.success-icon.hidden
+                                    i.fa-solid.fa-circle-check
 
                             .form-group.mb-md-0
 
                                 // Phone number input
+                                label(for='Phone') Phone
                                 input#phone.form-control(
                                     type='tel',
+                                    pattern="^\\+?[0-9]{1,4}(?:[ .-]?[0-9()]{1,4}){1,5}$",
                                     placeholder='Your Phone *',
-                                    data-sb-validations='required'
+                                    required, 
+                                    phone
                                 )
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
+                                .error.text-white.fw-bold
+                                span.error-icon.hidden
+                                    i.fa-solid.fa-circle-exclamation
+                                span.success-icon.hidden
+                                    i.fa-solid.fa-circle-check
 
                         .col-md-6
                             .form-group.form-group-textarea.mb-md-0
 
                                 // Message input
-                                textarea#message.form-control(
+                                label(for='Message') Message
+                                textarea#desc.form-control(
                                     placeholder='Your Message *',
-                                    data-sb-validations='required'
+                                    required
                                 )
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
+                                .error.text-white.fw-bold
+                                span.error-icon.hidden
+                                    i.fa-solid.fa-circle-exclamation
+                                span.success-icon.hidden
+                                    i.fa-solid.fa-circle-check
 
                     // Submit success message
                     //
@@ -388,21 +409,20 @@ html(lang='en')
                     #submitSuccessMessage.d-none
                         .text-center.text-white.mb-3
                             .fw-bolder Form submission successful!
-                            | To activate this form, sign up at
-                            br
-                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
 
                     // Submit error message
                     //
                     // This is what your users will see when there is
                     // an error submitting the form
 
+                    #errorMessage
+
                     #submitErrorMessage.d-none
-                        .text-center.text-danger.mb-3 Error sending message!
+                        .text-center.text-danger.mb-3.fw-bold Error sending message!
 
                     // Submit Button
                     .text-center
-                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
+                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Send Message
 
         // Footer
         footer.footer.py-4
@@ -430,10 +450,4 @@ html(lang='en')
 
         // Core theme JS
         script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        script(src='js/validation.js')
